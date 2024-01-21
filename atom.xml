@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://fusa-china.github.io</id>
+    <title>fusa-china</title>
+    <updated>2024-01-21T13:36:11.013Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://fusa-china.github.io"/>
+    <link rel="self" href="https://fusa-china.github.io/atom.xml"/>
+    <subtitle>功能安全</subtitle>
+    <logo>https://fusa-china.github.io/images/avatar.png</logo>
+    <icon>https://fusa-china.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, fusa-china</rights>
+    <entry>
+        <title type="html"><![CDATA[ISO13849功能安全从入门到精通（1）——基本全局介绍]]></title>
+        <id>https://fusa-china.github.io/post/iso13849-fusa-1/</id>
+        <link href="https://fusa-china.github.io/post/iso13849-fusa-1/">
+        </link>
+        <updated>2024-01-21T09:04:24.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[标准查看]]></title>
+        <id>https://fusa-china.github.io/post/biao-zhun-cha-kan/</id>
+        <link href="https://fusa-china.github.io/post/biao-zhun-cha-kan/">
+        </link>
+        <updated>2023-12-03T10:02:11.000Z</updated>
+    </entry>
+</feed>
