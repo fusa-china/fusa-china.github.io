@@ -1,0 +1,290 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ISO13849功能安全从入门到精通（1）——基本全局介绍 | fusa-china</title>
+<link rel="shortcut icon" href="https://fusa-china.github.io/favicon.ico?v=1732956156636">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fusa-china.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="ISO13849功能安全从入门到精通（1）——基本全局介绍 | fusa-china - Atom Feed" href="https://fusa-china.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="ISO 13849-1标准是评估复杂机器控制系统安全性的基础。它是一个基础的功能安全标准，包含了国际上统一的要求，涉及到确定所需的性能等级和确定与安全有关的控制部件，直到安全功能的实现。该标准适用于控制系统中与安全相关的部件，无论使用何种技..." />
+    <meta name="keywords" content="Fusa" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://fusa-china.github.io">
+  <img class="avatar" src="https://fusa-china.github.io/images/avatar.png?v=1732956156636" alt="">
+  </a>
+  <h1 class="site-title">
+    fusa-china
+  </h1>
+  <p class="site-description">
+    功能安全
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://fusa-china.github.io" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://fusa-china.github.io/fusan-china/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="https://fusa-china.github.io/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://fusa-china.github.io/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              ISO13849功能安全从入门到精通（1）——基本全局介绍
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-01-21
+              </span>
+              <span>
+                8 min read
+              </span>
+              
+                <a href="https://fusa-china.github.io/tag/RYVx0T4rC/" class="post-tag">
+                  # Fusa
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>ISO 13849-1标准是评估复杂机器控制系统安全性的基础。它是一个基础的功能安全标准，包含了国际上统一的要求，涉及到确定所需的性能等级和确定与安全有关的控制部件，直到安全功能的实现。该标准适用于控制系统中与安全相关的部件，无论使用何种技术和能源（电气、液压、气动、机械）。它描述了控制系统安全相关部件的设计和集成的安全要求。为这些部件定义了性能等级-PLr等属性；这些属性是执行特定安全功能所需要的。</p>
+<p>风险越高，对控制系统的要求也就越高。危险情况分为五个等级，也就是性能等级（PL），从PL“a”（低）到PL“e”（高）。根据EN ISO 13849-1的规定，所需的PL 是作为风险评估的一部分来确定和分配。</p>
+<h1 id="iso-13849-1-2023年的重大变化">ISO 13849-1 - 2023年的重大变化</h1>
+<p>2023年，国际标准化组织（ISO）发布了新版的ISO 13849-1。修订版规定了一系列准则，例如用于确定性能等级，从而为实施提供更好的支持。它还考虑到了软件的更深层意义。目前欧盟标准<br>
+[EN ISO 13849-1：2023](https://standards.cencenelec.eu/dyn/www/f?p=CEN:110:0::::FSP_PROJECT,FSP_ORG_ID:64935,6096&amp;cs=1B90A55AEEEEB7254DD22940E00EA90C1）已于2023年11月30日出版，并预计将于2026年5月31日正式取代现有的2015版本。</p>
+<h2 id="与之前版本iso-13849-12015相比iso-13849-12023发生了重大变化">与之前版本ISO 13849 1：2015相比，ISO 13849 1：2023发生了重大变化：</h2>
+<ul>
+<li>整体结构更加清晰，重点是将安全功能作为多个子系统的组合来实施</li>
+<li>在整个文件中使用“子系统”一词（而不是SRP/CS）</li>
+<li>改进和扩展安全功能规范(第5条)</li>
+<li>改进了与SRS (安全要求规范)相关的指南和附加要求(第5条)</li>
+<li>有关设计方面的说明(第6条)；例如优化的2类定义，确定每个子系统的CCF以及故障考虑，故障排除和久经考验的部件</li>
+<li>有关软件的改进和说明(第7条)</li>
+<li>验证(第10条)；ISO 13849-2的规范要求已修订并纳入第1部分</li>
+<li>确定所需性能等级(附件A)；参数P的更改</li>
+<li>澄清针对公因失效的措施(CCF)-(附录F)</li>
+<li>延长了功能安全管理准则(附件G.5)</li>
+<li>如何保证EMC抗噪能力足够高的详细信息(附录L)</li>
+<li>安全要求规范的补充信息(附录M)</li>
+<li>通过软件设计避免系统故障(附录N)；包含一个简单的软件验证示例</li>
+<li>有关组件安全相关值的附加信息(附录O)，与VDMA标准表66413的方法相适应</li>
+</ul>
+<p>#ISO 13849是实现机械安全的工具<br>
+安全是一个关键的话题，尤其是在欧洲 – 除其他事项外，它被纳入和制定在法律上的机械指令(MD)和未来在新的机械法规(MR)。EN ISO 13849等标准可用作验证的构建块，以满足控制系统安全相关部件的基本健康和安全要求。</p>
+<p>标准 ISO 13849由两部分组成，由ISO (国际标准化组织)开发和发布。<br>
+►第1部分–ISO 13849-1与设计的一般原则在技术上进行了修订，以阐明和详细说明一些要求，而不引入任何新的技术概念。这部分于2023年重新出版。<br>
+►标准第2部分– ISO 13849-2:2012：验证 最初将保持原样，随后将进行修订。第2部分的规范性附件载于第1部分的更新。</p>
+<p>EN ISO 13849-1:2015是以概率方法为基础，用于评估与安全有关的控制系统，并包含国际统一的要求，提及风险评估、所需的性能水平和与安全有关的控制部分的识别，直至安全功能的实施。</p>
+<p>EN ISO 13849-1:2023或ISO 13849-1:2023<em>使用图形来处理将风险分配到所需性能级别的问题</em>，并使用结构和统计方法来评估安全功能。目的是确定安全措施是否适合降低风险。</p>
+<p>#风险评估和风险降低与功能安全相结合<br>
+在欧盟， 标准EN ISO 12100被用于确定评估和降低机械风险时需要考虑的步骤。安全功能的评估和验证是EN ISO 13849和EN IEC 62061标准的主要内容。控制系统安全相关部件的设计是一个迭代过程，可通过几个步骤执行。</p>
+<ol>
+<li>步骤–定义安全功能要求</li>
+<li>步骤–确定安全功能要求(PL)</li>
+<li>步骤–设计并从技术上实施安全功能</li>
+<li>步骤–确定并定量评估绩效水平</li>
+<li>步骤–验证</li>
+<li>步骤–确认</li>
+</ol>
+<p>#风险评估和确定所需的性能等级PLr<br>
+在EN ISO 13849-1中，借助图表对风险进行评估。评估标准包括伤害的严重程度，暴露于风险的频率以及避免风险的可能性。评估结果是各个安全功能所需的绩效水平(PLr)，旨在将风险降至最低。</p>
+<p><img src="https://fusa-china.github.io/post-images/1705837763062.JPG" alt="" loading="lazy"><br>
+PL a对应于低风险，PL e对应于高风险。</p>
+<p>S - 受伤严重程度<br>
+S1 = 轻微(正常可逆伤害)<br>
+S2 = 严重(通常为不可逆转的伤害或死亡)</p>
+<p>F – 频率和/或暴露于危险中<br>
+F1 = 罕见到较少和/或暴露时间短<br>
+F2 = 频繁到持续和/或暴露时间长</p>
+<p>P – 避免危险或限制伤害的可能性<br>
+P1 = 在特定条件下有可能<br>
+P2 = 几乎不可能<br>
+<img src="https://fusa-china.github.io/post-images/1705837883851.JPG" alt="" loading="lazy"></p>
+<p>避开危险的可能性通过参数P的五个因素进一步规定：</p>
+<ul>
+<li>危险产生的速度(例如快速或缓慢)</li>
+<li>避免危险的可能性(例如通过逃逸)</li>
+<li>与流程相关的实际安全经验</li>
+<li>由专家或非专业人员操作</li>
+<li>在有或没有监督的情况下操作</li>
+</ul>
+<p>#对自主开发的子系统的实施进行评估<br>
+在ISO 13849-1和EN ISO 13849-1中，为了确定子系统的PL，必须定义以下方面。</p>
+<ul>
+<li>系统类别(结构要求)：这将子系统分类为其对故障的耐受性及其在发生故障时的后续行为，这可通过零件的结构排列，故障检测和/或其可靠性来实现</li>
+<li>危险故障的平均时间(MTTFD)</li>
+<li>诊断范围(DC)，定义为诊断有效性的衡量标准：[检测到的危险故障的故障率与危险故障总发生率之间的比率]</li>
+<li>共因失效(CCF)</li>
+</ul>
+<p>#软件 - 用于避免系统性故障的信息性附件N<br>
+与之前的EN ISO 13849-1版本相比，对应用软件的要求有所提高：2015. 已包含一份关于避免安全相关软件设计的故障/故障规避措施主题的信息性附录N。  ISO 13849-1现在涵盖各种软件类型：</p>
+<ul>
+<li>安全相关的嵌入式软件（SRESW）</li>
+<li>安全相关的应用软件（SRASW）</li>
+<li>参数设置软件<br>
+另外，关于如何将这些建议与有限（LVL=有限可变性语言）或无限语言范围（FVL=完全可变性语言）的编程语言要求联系起来，也包括了改进建议。</li>
+</ul>
+<p>#根据EN ISO 13849-1进行验证<br>
+例如对验证规范进行了调整，对ISO 13849-2:2012中有关验证程序的规范性要求进行了修订，并将其纳入ISO 13849-1:2023</p>
+<ul>
+<li>分析是对测试的补充，它不会取代测试</li>
+<li>对SRS的验证和检查进行了详细描述</li>
+<li>提供了一个软件验证的简单示例<br>
+请注意：故障评估表仍仅包含在EN ISO 13849-2或ISO 13849 2中。</li>
+</ul>
+<p>#电磁兼容性要求(EMC)<br>
+ISO 13849 1中 包含了一个参考性附录L 。其中详细介绍了如何保证足够的EMC抗噪能力。EMC干扰可能意味着电气或电子系统行为异常。因此，在子系统和整个系统层面上，应采取基本措施来防止EMC影响。为此列出了各种方案，包括EMC措施表的帮助。EMC指令规定了电磁兼容性的基本要求。</p>
+<p>关于EN ISO 13849-1和性能等级的更多信息后续会进一步拆分解读</p>
+<p>PS：对于经常需要访问外网阅读海外认证法规标准的同学可以考虑使用<a href="https://justmysocks.net/members/aff.php?aff=10848" target="_blank">搬瓦工</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#iso-13849-1-2023%E5%B9%B4%E7%9A%84%E9%87%8D%E5%A4%A7%E5%8F%98%E5%8C%96">ISO 13849-1 - 2023年的重大变化</a>
+<ul>
+<li><a href="#%E4%B8%8E%E4%B9%8B%E5%89%8D%E7%89%88%E6%9C%ACiso-13849-12015%E7%9B%B8%E6%AF%94iso-13849-12023%E5%8F%91%E7%94%9F%E4%BA%86%E9%87%8D%E5%A4%A7%E5%8F%98%E5%8C%96">与之前版本ISO 13849 1：2015相比，ISO 13849 1：2023发生了重大变化：</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://fusa-china.github.io/post/biao-zhun-cha-kan/">
+              <h3 class="post-title">
+                标准查看
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'd50dad315617e7eaf7e3',
+    clientSecret: '4a1a5afb47931a33cfc1137ff5c4f3560d8dc70a',
+    repo: 'https://fusa-china.github.io',
+    owner: 'fusa-china',
+    admin: ['fusa-china'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://fusa-china.com" target="_blank">Gridea</a>
+  <a class="rss" href="https://fusa-china.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

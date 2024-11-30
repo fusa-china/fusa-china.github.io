@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://fusa-china.github.io</id>
+    <title>fusa-china</title>
+    <updated>2024-11-30T08:42:51.413Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://fusa-china.github.io"/>
+    <link rel="self" href="https://fusa-china.github.io/atom.xml"/>
+    <subtitle>功能安全</subtitle>
+    <logo>https://fusa-china.github.io/images/avatar.png</logo>
+    <icon>https://fusa-china.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, fusa-china</rights>
+    <entry>
+        <title type="html"><![CDATA[机械安全——设计一般原则.风险评估和风险降低(ISO 12100)]]></title>
+        <id>https://fusa-china.github.io/post/ji-jie-an-quan-she-ji-yi-ban-yuan-ze-feng-xian-ping-gu-he-feng-xian-jiang-di-iso-12100/</id>
+        <link href="https://fusa-china.github.io/post/ji-jie-an-quan-she-ji-yi-ban-yuan-ze-feng-xian-ping-gu-he-feng-xian-jiang-di-iso-12100/">
+        </link>
+        <updated>2024-11-30T08:29:49.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[欧盟新机械法规(EU) 2023/1230]]></title>
+        <id>https://fusa-china.github.io/post/ou-meng-xin-ji-jie-fa-gui-eu-20231230/</id>
+        <link href="https://fusa-china.github.io/post/ou-meng-xin-ji-jie-fa-gui-eu-20231230/">
+        </link>
+        <updated>2024-11-30T03:18:10.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ISO13849功能安全从入门到精通（1）——基本全局介绍]]></title>
+        <id>https://fusa-china.github.io/post/iso13849-fusa-1/</id>
+        <link href="https://fusa-china.github.io/post/iso13849-fusa-1/">
+        </link>
+        <updated>2024-01-21T09:04:24.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[标准查看]]></title>
+        <id>https://fusa-china.github.io/post/biao-zhun-cha-kan/</id>
+        <link href="https://fusa-china.github.io/post/biao-zhun-cha-kan/">
+        </link>
+        <updated>2023-12-03T10:02:11.000Z</updated>
+    </entry>
+</feed>
